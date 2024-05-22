@@ -15,43 +15,6 @@ body {
     flex-direction: column;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
-    margin: 0;
-    padding: 0%;
-    padding-top: 1%;
-    font-size: 5vh; /* Responsive font size */
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-h2 {
-    margin: 0;
-    font-size: 3vh; /* Responsive font size */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-.word-container {
-    margin-top: 3%;
-    /* margin-bottom: 1%; */
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5%;
-    border: 2px solid black; /* Nice border color that matches the font color */
-    border-radius: 2%; /* Rounded corners for a nicer look */
-
-}
-
 .image-container {
     width: calc(100% - 4%); /* Subtracting twice the padding value (left + right) */
     height: calc(100% - 10%); /* Subtracting twice the padding value (top + bottom) and space for the title */
