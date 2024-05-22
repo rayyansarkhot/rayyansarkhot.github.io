@@ -10,15 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #7D6B91; /* Nice purple shade */
-    font-family: Arial, sans-serif; /* Nice font */
     color: #F5E1F4; /* Font color that matches the purple */
     flex-direction: column;
 }
 
 .image-container {
-    width: calc(100% - 4%); /* Subtracting twice the padding value (left + right) */
-    height: calc(100% - 10%); /* Subtracting twice the padding value (top + bottom) and space for the title */
-    padding: 2%; /* Adjust the padding value as needed */
+    /* width: calc(100% - 4%); Subtracting twice the padding value (left + right) */
+    height: calc(100% - 10%); 
+    /* padding: .0%; Adjust the padding value as needed */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
