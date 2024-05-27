@@ -23,7 +23,7 @@ async function updateData() {
     try {
         const data = await fetchData();
         console.log(data);
-        // displayData(data);
+        displayData(data);
     } catch (error) {
         console.error('Error fetching data:', error);
     }

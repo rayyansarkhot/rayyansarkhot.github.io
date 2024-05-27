@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -9,14 +10,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7D6B91; /* Nice purple shade */
-    color: #F5E1F4; /* Font color that matches the purple */
+    background-color: #7D6B91;
+    /* Nice purple shade */
+    color: #F5E1F4;
+    /* Font color that matches the purple */
     flex-direction: column;
 }
 
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+}
+.info-container, .legend-container {
+    width: 20%;
+    background-color: #4E3A68;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 1px solid #F5E1F4;
+    border-radius: 10px;
+    position: relative;
+    margin: 2%;
+}
+
 .image-container {
-    /* width: calc(100% - 4%); Subtracting twice the padding value (left + right) */
-    height: calc(100% - 10%); 
+    width: 50%;
+    height: calc(100% - 10%);
     /* padding: .0%; Adjust the padding value as needed */
     box-sizing: border-box;
     display: flex;
@@ -30,7 +53,9 @@ body {
     height: auto;
     width: auto;
     display: block;
-    border: 2px solid #F5E1F4; /* Nice border color that matches the font color */
-    border-radius: 1%; /* Rounded corners for a nicer look */
+    border: 2px solid #F5E1F4;
+    /* Nice border color that matches the font color */
+    border-radius: 1%;
+    /* Rounded corners for a nicer look */
 
 }
