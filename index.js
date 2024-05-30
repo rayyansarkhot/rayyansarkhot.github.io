@@ -8,14 +8,20 @@ async function fetchData() {
     return data.values;
 }
 
-function displayData(data) {
-    const dataDiv = document.getElementById('data');
-    dataDiv.innerHTML = '';
+function updateBoothData(data) {
+    const boothsDiv = document.getElementById('booths').children;
 
+    // Assuming data is an array of arrays, where the first element is the booth number and the second element is the booth name
     data.forEach(row => {
-        const rowDiv = document.createElement('div');
-        rowDiv.textContent = row.join(', ');
-        dataDiv.appendChild(rowDiv);
+        const boothNumber = row[0];
+        const boothName = row[1];
+        
+        // Find the booth div by id
+        const boothDiv = document.getElementById(`booth${boothNumber}`);
+        if (boothDiv) {
+            // Update the data-name attribute with the booth name
+            boothDiv.setAttribute('data-name', boothName);
+        }
     });
 }
 
@@ -23,7 +29,7 @@ async function updateData() {
     try {
         const data = await fetchData();
         console.log(data);
-        displayData(data);
+        updateBoothData(data);
     } catch (error) {
         console.error('Error fetching data:', error);
     }
@@ -34,3 +40,25 @@ updateData();
 
 // Fetch data every 30 seconds
 setInterval(updateData, 30000);
+
+// New code for hover effect
+document.addEventListener('DOMContentLoaded', (event) => {
+    const boothsDiv = document.getElementById('booths');
+    const boothInfo = document.getElementById('booth_info');
+
+    function showDefaultMessage() {
+        boothInfo.textContent = 'Hover over booth to see more info';
+    }
+
+    boothsDiv.addEventListener('mouseleave', showDefaultMessage);
+
+    boothsDiv.addEventListener('mouseover', (event) => {
+        if (event.target !== boothsDiv) {
+            const boothNumber = event.target.textContent.trim(); // Get the text content of the booth box
+            const boothName = event.target.getAttribute('data-name');
+            boothInfo.innerHTML = `Booth #: ${boothNumber}<br>Vendor: ${boothName}`; // Use innerHTML to insert HTML content with a line break
+        }
+    });
+
+    showDefaultMessage();
+});
