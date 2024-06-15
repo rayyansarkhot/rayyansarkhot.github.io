@@ -1,85 +1,24 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
     height: 100%;
-    /* overflow: hidden; Prevent scrollbars */
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #7D6B91;
-    color: #F5E1F4;
-    flex-direction: column;
-}
-
-.container {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 100%;
-    justify-content: center;
-}
-
-.info-container {
-    width: 20%;
-    background-color: #4E3A68;
-    padding: 1%;
-    box-sizing: border-box;
-    border: 1px solid #F5E1F4;
-    border-radius: 10px;
-    position: relative;
-    margin: 2%;
-    display: flex;
-    flex-direction: column;
-}
-
-.booth-container, .legend-container {
-    width: 100%;
-    height: 50%;
-    background-color: #4E3A68;
-    padding: 5%;
-    box-sizing: border-box;
-    border: 2px solid #F5E1F4;
-    border-radius: 10px;
-    position: relative;
-}
-
-.booth-container {
-    margin-bottom: 2%;
-}
-
-.legend-container {
-    margin-top: 2%;
-}
-
-h3 {
-    margin: 0;
-    font-weight: 100;
-    font-size: 1.5vw;
 }
 
 .image-container {
-    width: 50%;
-    position: relative; 
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative; /* Ensures that absolutely positioned elements inside are relative to this container */
 }
 
-.image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    display: block;
-    border: 2px solid #F5E1F4;
-    border-radius: 1%;
-    position: relative;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 #booths {
-    position: absolute; /* Add this line to make booth boxes absolute positioned */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -87,25 +26,25 @@ h3 {
 }
 
 .booth-box {
-    position: absolute; /* This positions the boxes absolutely within the #booths container */
-    height: 5%;
-    width: 5%;
+    position: absolute; 
+    height: 2vw;
+    width: 2vw;
     background-color: antiquewhite;
     box-sizing: border-box;
     color: black;
-    border: 1px solid black; /* Optional: adds a border to each box for better visibility */
-    font-size: 100%;
+    border: 1px solid black; 
+    font-size: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #booth1 {
-    top: 10%; /* Adjust the top position relative to the image's size */
-    left: 10%; /* Adjust the left position relative to the image's size */
+    top: 10%; /* Adjust the top position relative to the container's size */
+    left: 10%; /* Adjust the left position relative to the container's size */
 }
 
 #booth2 {
-    top: 20%; /* Adjust the top position relative to the image's size */
-    left: 20%; /* Adjust the left position relative to the image's size */
+    top: 20%; /* Adjust the top position relative to the container's size */
+    left: 20%; /* Adjust the left position relative to the container's size */
 }
