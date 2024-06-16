@@ -7,8 +7,6 @@ body {
 }
 
 .image-container {
-    min-width: 100vw;
-    min-height: 100vh;
     position: relative;
     /* Ensures that absolutely positioned elements inside are relative to this container */
 }
@@ -46,7 +44,7 @@ img {
     border: 1px solid black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
-    font-size: .95vw;
+    font-size: .8vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,22 +52,22 @@ img {
 
 #booth1 {
     top: 53%;
-    left: 18.5%;
+    left: 19.1%;
 }
 
 #booth2 {
     top: 52.3571%;
-    left: 20.1286%;
+    left: 20.8%;
 }
 
 #booth3 {
     top: 50.7143%;
-    left: 21.8571%;
+    left: 22.5%;
 }
 
 #booth4 {
     top: 50.0714%;
-    left: 23.7857%;
+    left: 24.1%;
 }
 
 #booth5 {
@@ -267,96 +265,117 @@ img {
 }
 
 #booth42 {
-    top: ;
-    left: ;
+    top: 32.5%;
+    left: 64.9%;
 }
 
 #booth43 {
-    top: ;
-    left: ;
+    top: 33.5%;
+    left: 66.8%;
 }
 
 #booth44 {
-    top: ;
-    left: ;
+    top: 34.5%;
+    left: 68.6%;
 }
 
 #booth45 {
-    top: ;
-    left: ;
+    top: 35.5%;
+    left: 70.5%;
 }
 
 #booth46 {
-    top: ;
-    left: ;
+    top: 36.5%;
+    left: 72.2%;
 }
 
 #booth47 {
-    top: ;
-    left: ;
+    top: 37%;
+    left: 74%;
 }
 
 #booth48 {
-    top: ;
-    left: ;
+    top: 32%;
+    left: 75.7%;
 }
 
 #booth49 {
-    top: ;
-    left: ;
+    top: 33%;
+    left: 77.3%;
 }
 
 #booth50 {
-    top: ;
-    left: ;
+    top: 34%;
+    left: 79.0%;
 }
 
 #booth51 {
-    top: ;
-    left: ;
+    top: 35%;
+    left: 81%;
 }
 
 #booth52 {
-    top: ;
-    left: ;
+    top: 41%;
+    left: 79.9%;
 }
 
 #booth53 {
-    top: ;
-    left: ;
+    top: 42%;
+    left: 81.5%;
 }
 
 #booth54 {
-    top: ;
-    left: ;
+    top: 43%;
+    left: 83.2%;
 }
 
 #booth55 {
-    top: ;
-    left: ;
+    top: 44.8%;
+    left: 85.0%;
 }
 
 #booth56 {
-    top: ;
-    left: ;
+    top: 36.5%;
+    left: 83%;
 }
 
 #booth57 {
-    top: ;
-    left: ;
+    top: 37.8%;
+    left: 85%;
 }
 
 #booth58 {
-    top: ;
-    left: ;
+    top: 40%;
+    left: 86.9%;
 }
 
 #booth59 {
-    top: ;
-    left: ;
+    top: 44.8%;
+    left: 9.7%;
 }
 
 #booth60 {
-    top: ;
-    left: ;
+    top: 47.4%;
+    left: 11.2%;
 }
+
+#booth61 {
+    top: 48.5%;
+    left: 12.8%;
+}
+
+#booth62 {
+    top: 49.9%;
+    left: 14.3%;
+}
+
+#booth63 {
+    top: 51.5%;
+    left: 15.9%;
+}
+
+#booth64 {
+    top: 52.8%;
+    left: 17.5%;
+}
+
