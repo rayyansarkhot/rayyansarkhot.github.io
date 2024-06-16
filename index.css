@@ -70,6 +70,31 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+h2 {
+    font-size: 2vw;
+    margin:0;
+    color:rgb(223, 34, 34);
+}
+
+#info1 {
+    top: 2%;
+    left: 78%;
+    background-color: rgba(168, 160, 160, 0.703);
+    height: 20%;
+    width: 20%;
+    /* transform: rotate(30deg); Rotate the element 45 degrees */
+    font-size: 2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 #rides1 {
     top: 70.0%;
     left: 4%;
