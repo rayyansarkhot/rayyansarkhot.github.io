@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -8,13 +9,14 @@ html, body {
 .image-container {
     min-width: 100vw;
     min-height: 100vh;
-    position: relative; /* Ensures that absolutely positioned elements inside are relative to this container */
+    position: relative;
+    /* Ensures that absolutely positioned elements inside are relative to this container */
 }
 
 img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 #booths {
@@ -26,7 +28,8 @@ img {
 }
 
 #booths {
-    position: absolute; /* Position booths relative to image-container */
+    position: absolute;
+    /* Position booths relative to image-container */
     top: 0;
     left: 0;
     width: 100%;
@@ -34,14 +37,14 @@ img {
 }
 
 .booth-box {
-    position: absolute; 
+    position: absolute;
     height: 1.5vw;
     width: 1.5vw;
     background-color: antiquewhite;
     box-sizing: border-box;
     color: black;
-    border: 1px solid black; 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     font-size: .95vw;
     display: flex;
@@ -50,76 +53,310 @@ img {
 }
 
 #booth1 {
-    top: 53%; 
-    left: 18.5%; 
+    top: 53%;
+    left: 18.5%;
 }
 
 #booth2 {
-    top: 52.3571%; 
-    left: 20.1286%; 
+    top: 52.3571%;
+    left: 20.1286%;
 }
 
 #booth3 {
-    top: 50.7143%; 
-    left: 21.8571%; 
+    top: 50.7143%;
+    left: 21.8571%;
 }
 
 #booth4 {
-    top: 50.0714%; 
-    left: 23.7857%; 
+    top: 50.0714%;
+    left: 23.7857%;
 }
+
 #booth5 {
-    top: 48.85%; /* Adjusted for arch */
-    left: 25.7143%; 
+    top: 48.85%;
+    /* Adjusted for arch */
+    left: 25.7143%;
 }
 
 #booth6 {
-    top: 48.5%; /* Adjusted for arch */
-    left: 27.6429%; 
+    top: 48.5%;
+    /* Adjusted for arch */
+    left: 27.6429%;
 }
 
 #booth7 {
-    top: 47.1%; /* Adjusted for arch */
-    left: 29.5714%; 
+    top: 47.1%;
+    /* Adjusted for arch */
+    left: 29.5714%;
 }
 
 #booth8 {
-    top: 46.7%; /* Adjusted for arch */
-    left: 31.5%; 
+    top: 46.7%;
+    /* Adjusted for arch */
+    left: 31.5%;
 }
 
 #booth9 {
-    top: 45.3%; /* Adjusted for arch */
-    left: 33.4286%; 
+    top: 45.3%;
+    /* Adjusted for arch */
+    left: 33.4286%;
 }
 
 #booth10 {
-    top: 44.9%; /* Adjusted for arch */
-    left: 35.3571%; 
+    top: 44.9%;
+    /* Adjusted for arch */
+    left: 35.3571%;
 }
 
 #booth11 {
-    top: 44.5%; /* Adjusted for arch */
-    left: 37.2857%; 
+    top: 44.5%;
+    /* Adjusted for arch */
+    left: 37.2857%;
 }
 
 #booth12 {
-    top: 44.1%; /* Adjusted for arch */
-    left: 39.2143%; 
+    top: 44.1%;
+    /* Adjusted for arch */
+    left: 39.2143%;
 }
 
 #booth13 {
-    top: 43.75%; /* Adjusted for arch */
-    left: 41.1429%; 
+    top: 43.75%;
+    /* Adjusted for arch */
+    left: 41.1429%;
 }
 
 #booth14 {
-    top: 43.6429%; 
-    left: 43.0714%; 
+    top: 43.6429%;
+    left: 43.0714%;
 }
 
 #booth15 {
-    top: 43%; 
-    left: 45%; 
+    top: 43%;
+    left: 45%;
 }
 
+#booth16 {
+    top: 43%;
+    left: 51%;
+}
+
+#booth17 {
+    top: 44%;
+    left: calc(51% + 1.8%);
+}
+
+#booth18 {
+    top: 44.5%;
+    left: calc(51% + 2 * 1.8%);
+}
+
+#booth19 {
+    top: 44.9%;
+    left: calc(51% + 3 * 1.8%);
+}
+
+#booth20 {
+    top: 45%;
+    left: calc(51% + 4 * 1.8%);
+}
+
+#booth21 {
+    top: 45.4%;
+    left: calc(51% + 5 * 1.8%);
+}
+
+#booth22 {
+    top: 46%;
+    left: calc(51% + 6 * 1.8%);
+}
+
+#booth23 {
+    top: 47%;
+    left: calc(51% + 7 * 1.8%);
+}
+
+#booth24 {
+    top: 47%;
+    left: calc(51% + 8 * 1.8%);
+}
+
+#booth25 {
+    top: 48%;
+    left: calc(51% + 9 * 1.8%);
+}
+
+#booth26 {
+    top: 49%;
+    left: calc(51% + 10 * 1.8%);
+}
+
+#booth27 {
+    top: 50%;
+    left: calc(51% + 11 * 1.8%);
+}
+
+#booth28 {
+    top: 51%;
+    left: calc(51% + 12 * 1.8%);
+}
+
+#booth29 {
+    top: 52%;
+    left: calc(51% + 13 * 1.8%);
+}
+
+#booth30 {
+    top: 53%;
+    left: calc(51% + 14 * 1.8%);
+}
+
+#booth31 {
+    top: 43%;
+    left: 11.5%;
+}
+
+#booth32 {
+    top: 42%;
+    left: 13.2%;
+}
+
+#booth33 {
+    top: 41%;
+    left: 14.9%;
+}
+
+#booth34 {
+    top: 40%;
+    left: 16.6%;
+}
+
+#booth35 {
+    top: 39%;
+    left: 18.3%;
+}
+
+#booth36 {
+    top: 35.5%;
+    left: 23%;
+}
+
+#booth37 {
+    top: 34.5%;
+    left: 24.8%;
+}
+
+#booth38 {
+    top: 34%;
+    left: 26.5%;
+}
+
+#booth39 {
+    top: 33.5%;
+    left: 28.5%;
+}
+
+#booth40 {
+    top: 32.5%;
+    left: 30.5%;
+}
+
+#booth41 {
+    top: 32.1%;
+    left: 63%;
+}
+
+#booth42 {
+    top: ;
+    left: ;
+}
+
+#booth43 {
+    top: ;
+    left: ;
+}
+
+#booth44 {
+    top: ;
+    left: ;
+}
+
+#booth45 {
+    top: ;
+    left: ;
+}
+
+#booth46 {
+    top: ;
+    left: ;
+}
+
+#booth47 {
+    top: ;
+    left: ;
+}
+
+#booth48 {
+    top: ;
+    left: ;
+}
+
+#booth49 {
+    top: ;
+    left: ;
+}
+
+#booth50 {
+    top: ;
+    left: ;
+}
+
+#booth51 {
+    top: ;
+    left: ;
+}
+
+#booth52 {
+    top: ;
+    left: ;
+}
+
+#booth53 {
+    top: ;
+    left: ;
+}
+
+#booth54 {
+    top: ;
+    left: ;
+}
+
+#booth55 {
+    top: ;
+    left: ;
+}
+
+#booth56 {
+    top: ;
+    left: ;
+}
+
+#booth57 {
+    top: ;
+    left: ;
+}
+
+#booth58 {
+    top: ;
+    left: ;
+}
+
+#booth59 {
+    top: ;
+    left: ;
+}
+
+#booth60 {
+    top: ;
+    left: ;
+}
