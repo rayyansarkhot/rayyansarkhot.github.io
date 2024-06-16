@@ -70,6 +70,60 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#rides1 {
+    top: 70.0%;
+    left: 4%;
+    background-color: burlywood;
+    height: 20%;
+    width: 20%;
+    transform: rotate(30deg); /* Rotate the element 45 degrees */
+    font-size: 3vw;
+    text-align: center;
+}
+
+#prayer1 {
+    top: 51.0%;
+    left: 41%;
+    background-color: brown;
+    height: 16%;
+    width: 15%;
+    transform: rotate(0deg); /* Rotate the element 45 degrees */
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+#welcome1 {
+    top:35.0%;
+    left: 42.8%;
+    background-color: green;
+    height: 7%;
+    width: 12%;
+    transform: rotate(0deg); /* Rotate the element 45 degrees */
+    font-size: 1.5vw;
+}
+
+#welcome2 {
+    top:50.0%;
+    left: 6%;
+    background-color: green;
+    height: 5%;
+    width: 4.6%;
+    transform: rotate(32deg); /* Rotate the element 45 degrees */
+    font-size: .9vw;
+    text-align: center;
+}
+
+#welcome3 {
+    top: 60.0%;
+    left: 16%;
+    background-color: green;
+    height: 5%;
+    width: 4.6%;
+    transform: rotate(32deg); /* Rotate the element 45 degrees */
+    font-size: .9vw;
+    text-align: center;
+}
+
 #food1 {
     top: 17%;
     left: 29%;
@@ -78,6 +132,39 @@ img {
     width: 12%;
     transform: rotate(-8deg); /* Rotate the element 45 degrees */
     font-size: 1.5vw;
+}
+
+#food2 {
+    top: 25%;
+    left: 12%;
+    background-color: yellow;
+    height: 10%;
+    width: 12%;
+    transform: rotate(-20deg); /* Rotate the element 45 degrees */
+    font-size: 1.5vw;
+}
+
+
+#food3 {
+    top: 17%;
+    left: 56%;
+    background-color: yellow;
+    height: 10%;
+    width: 12%;
+    transform: rotate(10deg); /* Rotate the element 45 degrees */
+    font-size: 1.5vw;
+}
+
+#food4 {
+    top: 23%;
+    left: 73%;
+    background-color: yellow;
+    height: 10%;
+    width: 3%;
+    transform: rotate(20deg); /* Rotate the element 45 degrees */
+    font-size: 1vw;
+    display: flex;
+    text-align: center;
 }
 
 #booth1 {
