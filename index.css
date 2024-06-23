@@ -121,7 +121,7 @@ p {
     padding: 1vw .2vw;
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-radius: 1vw;
 }
 
 .arrow-box2 {
@@ -148,7 +148,7 @@ p {
     padding: 1vw .2vw;
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-radius: 1vw;
 }
 
 #familyGames1 {
