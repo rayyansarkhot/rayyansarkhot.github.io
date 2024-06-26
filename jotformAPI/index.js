@@ -33,10 +33,12 @@ app.post('/webhook', upload.none(), async (req, res) => {
 
   try {
     const parsedRawRequest = JSON.parse(rawRequest);
-    // console.log('Parsed rawRequest:', parsedRawRequest);
-
-    const boothNumber = parsedRawRequest.q14_boothNumber; // Adjust according to your JSON structure
-    console.log("Booth # - " + boothNumber)
+    console.log('Parsed rawRequest:', parsedRawRequest);
+    const vendor = parsedRawRequest.q12_businessorganizationName;
+    const boothNumber = parsedRawRequest.q24_typeA24; // Adjust according to your JSON structure
+    console.log("Booth # - " + boothNumber);
+    console.log("Booth Name - " + vendor);
+    
     if (!boothNumber) {
       return res.status(400).send('Booth # is required');
     }
@@ -68,9 +70,10 @@ app.post('/webhook', upload.none(), async (req, res) => {
       }
 
       if (rowIndex === undefined) {
+        console.log("UNDEFINED ROW INDEX");
         return res.status(404).send('Booth # not found');
       }
-
+      console.log(rowIndex);
       // Update the vendor column to 'filled'
       const updateRange = `${SHEET_NAME}!${String.fromCharCode(65 + vendorIndex)}${rowIndex + 1}`;
       await sheets.spreadsheets.values.update({
@@ -78,7 +81,7 @@ app.post('/webhook', upload.none(), async (req, res) => {
         range: updateRange,
         valueInputOption: 'RAW',
         resource: {
-          values: [['filled']],
+          values: [[vendor]],
         },
       });
 

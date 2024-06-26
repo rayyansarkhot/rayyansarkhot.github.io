@@ -43,7 +43,7 @@ function showBoothInfo(event) {
     
     // Only show the popup if the booth name is not "Null"
     if (boothName !== "Null" && boothName.trim() !== '') {
-        boothInfoDiv.innerHTML = `Booth: ${boothDiv.textContent}<br>Vendor: ${boothName}`;
+        boothInfoDiv.innerHTML = `Booth: ${boothDiv.textContent}`;
         boothInfoDiv.style.display = 'block';
     }
 }
