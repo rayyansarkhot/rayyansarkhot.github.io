@@ -13,11 +13,12 @@ function updateBoothData(data) {
 
     // Assuming data is an array of arrays, where the first element is the booth number and the second element is the booth name
     data.forEach(row => {
-        const boothNumber = row[0];
+        const boothNumber = row[0].slice(0,-1);
         const boothName = row[1];
         
         // Find the booth div by id
         const boothDiv = document.getElementById(`booth${boothNumber}`);
+
         if (boothDiv) {
             // Update the data-name attribute with the booth name
             boothDiv.setAttribute('data-name', boothName);
