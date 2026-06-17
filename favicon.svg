@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- cap -->
+  <rect x="12" y="2" width="8" height="3" rx="1" fill="#8a6520"/>
+  <!-- body -->
+  <rect x="12" y="5" width="8" height="15" fill="#c49a4a"/>
+  <!-- label band -->
+  <rect x="12" y="20" width="8" height="4" fill="#e8d090"/>
+  <!-- tip -->
+  <polygon points="12,24 20,24 16,31" fill="#a07828"/>
+</svg>
