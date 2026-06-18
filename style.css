@@ -4,7 +4,7 @@
   --dim: #686560;
   --accent: #c49a4a;
   --border: #1c1c18;
-  --font: 'JetBrains Mono', monospace;
+  --font: 'Times New Roman', Times, serif;
 }
 
 *, *::before, *::after {
