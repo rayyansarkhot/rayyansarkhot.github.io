@@ -130,15 +130,30 @@ a:hover {
   text-underline-offset: 3px;
 }
 
-/* --- About photo --- */
+/* --- About --- */
+
+.about-body {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 32px;
+}
+
+.about-text p {
+  font-size: 13.5px;
+  line-height: 1.85;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
 
 .about-photo {
-  display: block;
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
-  object-position: center 35%;
-  margin-bottom: 28px;
+  object-position: center 0%;
   filter: brightness(0.92);
 }
 
@@ -251,5 +266,13 @@ footer a:hover {
 
   .tab {
     width: auto;
+  }
+
+  .about-body {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    height: 240px;
   }
 }
