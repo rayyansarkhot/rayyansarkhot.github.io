@@ -149,11 +149,17 @@ a:hover {
   margin-bottom: 0;
 }
 
-.about-photo {
-  width: 100%;
+.about-photo-wrap {
+  overflow: hidden;
   height: 100%;
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  height: 167%;
   object-fit: cover;
-  object-position: center 0%;
+  object-position: top;
   filter: brightness(0.92);
 }
 
