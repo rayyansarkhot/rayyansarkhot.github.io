@@ -137,7 +137,7 @@ a:hover {
   width: 100%;
   height: 260px;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 50%;
   margin-bottom: 28px;
   filter: brightness(0.92);
 }
