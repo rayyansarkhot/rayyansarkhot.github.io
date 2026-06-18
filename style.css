@@ -130,36 +130,15 @@ a:hover {
   text-underline-offset: 3px;
 }
 
-/* --- About --- */
-
-.about-body {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 32px;
-}
-
-.about-text p {
-  font-size: 13.5px;
-  line-height: 1.85;
-  color: var(--text);
-  margin-bottom: 14px;
-}
-
-.about-text p:last-child {
-  margin-bottom: 0;
-}
-
-.about-photo-wrap {
-  overflow: hidden;
-  height: 100%;
-}
+/* --- About photo --- */
 
 .about-photo {
   display: block;
   width: 100%;
-  height: 167%;
+  height: 260px;
   object-fit: cover;
-  object-position: top;
+  object-position: center 35%;
+  margin-bottom: 28px;
   filter: brightness(0.92);
 }
 
@@ -272,13 +251,5 @@ footer a:hover {
 
   .tab {
     width: auto;
-  }
-
-  .about-body {
-    grid-template-columns: 1fr;
-  }
-
-  .about-photo {
-    height: 240px;
   }
 }
