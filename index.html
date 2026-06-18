@@ -13,19 +13,18 @@
 <body>
   <div class="wrap">
 
-    <nav>
-      <span class="home">Rayyan Sarkhot</span>
-      <a href="blog/index.html">Writing</a>
-      <a href="#graveyard">Graveyard</a>
-    </nav>
-
-    <div class="hero">
+    <header>
       <h1>Rayyan Sarkhot</h1>
       <p class="subtitle">Software Engineer &mdash; Go, TypeScript</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab" data-tab="about">About</button>
+      <button class="tab" data-tab="graveyard">Graveyard of Ideas</button>
+      <button class="tab" data-tab="writing">Writing</button>
     </div>
 
-    <div class="section">
-      <p class="label">About</p>
+    <div class="tab-panel" id="about">
       <p>
         I'm a software engineer with close to a year of experience, currently helping build
         <a href="https://www.rollbyadp.com/" target="_blank" rel="noopener">Roll by ADP</a> &mdash;
@@ -39,9 +38,7 @@
       </p>
     </div>
 
-    <div class="section" id="graveyard">
-      <p class="label">Graveyard of Ideas</p>
-
+    <div class="tab-panel" id="graveyard">
       <div class="grave-list">
 
         <div class="grave">
@@ -71,13 +68,21 @@
       </div>
     </div>
 
-    <div class="section">
-      <p class="label">Writing</p>
-      <p>
-        Thoughts on software, products, and things I&rsquo;m figuring out.
-        <a href="blog/index.html">All posts &rarr;</a>
-      </p>
-      <div class="empty">Nothing here yet.</div>
+    <div class="tab-panel" id="writing">
+      <p class="writing-sub">Thoughts on software, products, and things I&rsquo;m figuring out.</p>
+      <div class="post-list">
+        <!--
+          To add a post:
+          1. Create blog/posts/your-slug.html
+          2. Add an entry here:
+
+          <div class="post">
+            <span class="post-date">2026-06-17</span>
+            <a href="blog/posts/your-slug.html">Your post title</a>
+          </div>
+        -->
+        <div class="empty">Nothing here yet.</div>
+      </div>
     </div>
 
     <footer>
@@ -86,5 +91,27 @@
     </footer>
 
   </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    function activate(id) {
+      tabs.forEach(t => t.classList.toggle('active', t.dataset.tab === id));
+      panels.forEach(p => p.classList.toggle('active', p.id === id));
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const id = tab.dataset.tab;
+        history.pushState(null, '', '#' + id);
+        activate(id);
+      });
+    });
+
+    const hash = location.hash.replace('#', '');
+    const valid = ['about', 'graveyard', 'writing'];
+    activate(valid.includes(hash) ? hash : 'about');
+  </script>
 </body>
 </html>
